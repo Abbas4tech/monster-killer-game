@@ -11,7 +11,7 @@ const enteredHealth = prompt("Choose maximum life for you and monster!", "100");
 
 let chosenMaxLife = parseInt(enteredHealth);
 
-if (isNaN(chosenMaxLife || chosenMaxLife <= 0)) {
+if (isNaN(chosenMaxLife) || chosenMaxLife <= 0) {
   chosenMaxLife = 100;
 }
 
