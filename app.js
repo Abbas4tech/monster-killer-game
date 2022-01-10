@@ -127,11 +127,11 @@ function endRound() {
     writeLog(logEventGameOver, "Player Won!", monsterHealth, playerHealth);
   } else if (playerHealth <= 0 && monsterHealth > 0) {
     alert("You lost!");
-    reset;
+    reset();
     writeLog(logEventGameOver, "Monster Won!", monsterHealth, playerHealth);
   } else if (playerHealth <= 0 && monsterHealth <= 0) {
     alert("You have a draw!");
-    reset;
+    reset();
     writeLog(logEventMonsterAttack, "Draw!", monsterHealth, playerHealth);
   }
 }
